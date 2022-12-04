@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 2px solid;
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+main{
+    .Hero{        
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../Images/DATA\ CENTER.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        .hero_text{
+            margin: auto;            
+            h1{
+                color: #fff;                
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.5em;      
+                span{
+                    color: rgb(105, 165, 14);
+                }          
+            }          
+        } 
+        .hero_image{
+            display: none;
+        }       
+    }
+    .Home_about{
+        .about_text{
+            p{
+                margin: 12px;
+            }
+        }
+    }
+    .Footer{
+        background: #000;
+        color: #efefef;
+        text-align: center;
+        padding: 12px 0;                
+    }
+
+    @media screen and (min-width: 726px){
+        .Footer{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .Hero{
+            height: 95vh;
+            background: unset; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .hero_text{
+                width: 90%;
+                margin: auto;
+                h1{
+                    color: #000;
+                    font-size: 1.7em;
+                    span{
+                        font-size: 1.7em;
+                    }
+                }
+            }
+            .hero_image{
+                display: block;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        
+
+
+        .Footer{
+            position: unset;
+        }
+    }
+
+
+
+    .About{
+        .about_text{
+            h1{
+                padding: 15px 0 0;
+            }
+        }
+        .about_image{
+            img{
+                max-width: 100%;                
+            }
+            .address{
+                margin-bottom: 5%;
+                p{
+                    margin: unset;
+                }
+            }
+            .contacts{
+                p{
+                    margin: unset;
+                }
+            }
+        }
+    }
+
+
+
+    .Services{
+        .service{
+            h1{
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            h2{
+                font-size: 1em;
+                font-weight: bold;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
