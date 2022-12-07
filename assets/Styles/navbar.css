@@ -1,12 +1,8 @@
 /* navbar */
-.nav_wrapper {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
   .nav_bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

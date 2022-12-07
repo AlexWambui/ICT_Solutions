@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .section_heading {
   text-transform: uppercase;
@@ -10,9 +9,12 @@
   font-size: 1.5em;
   border-bottom: 2px solid;
   width: 60%;
-  margin: 5% auto;
-  text-align: center;
-}
+  margin: 20% auto 5%;
+  text-align: center; }
+
+@media screen and (min-width: 1024px) {
+  .section_heading {
+    margin: 8% auto 2%; } }
 
 main .Hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../Images/DATA CENTER.jpg");
@@ -21,94 +23,87 @@ main .Hero {
   height: 60vh;
   width: 100vw;
   display: flex;
-  align-items: center;
-}
-main .Hero .hero_text {
-  margin: auto;
-}
-main .Hero .hero_text h1 {
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.5em;
-}
-main .Hero .hero_text h1 span {
-  color: rgb(105, 165, 14);
-}
-main .Hero .hero_image {
-  display: none;
-}
+  align-items: center; }
+  main .Hero .hero_text {
+    margin: auto; }
+    main .Hero .hero_text h1 {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.5em; }
+      main .Hero .hero_text h1 span {
+        color: #69a50e; }
+  main .Hero .hero_image {
+    display: none; }
+
 main .Home_about .about_text p {
-  margin: 12px;
-}
+  margin: 12px; }
+
 main .Footer {
   background: #000;
   color: #efefef;
   text-align: center;
-  padding: 12px 0;
-}
+  padding: 12px 0; }
+
 @media screen and (min-width: 726px) {
   main .Footer {
     position: absolute;
     width: 100%;
-    bottom: 0;
-  }
-}
+    bottom: 0; } }
+
 @media screen and (min-width: 1024px) {
   main .Hero {
     height: 95vh;
+    width: 98.9vw;
     background: unset;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  main .Hero .hero_text {
-    width: 90%;
-    margin: auto;
-  }
-  main .Hero .hero_text h1 {
-    color: #000;
-    font-size: 1.7em;
-  }
-  main .Hero .hero_text h1 span {
-    font-size: 1.7em;
-  }
-  main .Hero .hero_image {
-    display: block;
-    height: 100%;
-  }
-  main .Hero .hero_image img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+    grid-template-columns: 1fr 1fr; }
+    main .Hero .hero_text {
+      width: 90%;
+      margin: auto; }
+      main .Hero .hero_text h1 {
+        color: #000;
+        font-size: 1.7em; }
+        main .Hero .hero_text h1 span {
+          font-size: 1.7em; }
+    main .Hero .hero_image {
+      display: block;
+      height: 100%; }
+      main .Hero .hero_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
   main .Footer {
-    position: unset;
-  }
-}
+    position: unset; } }
+
 main .About .about_text h1 {
-  padding: 15px 0 0;
-}
+  padding: 15px 0 0; }
+
 main .About .about_image img {
-  max-width: 100%;
-}
+  max-width: 100%; }
+
 main .About .about_image .address {
-  margin-bottom: 5%;
-}
-main .About .about_image .address p {
-  margin: unset;
-}
+  margin-bottom: 5%; }
+  main .About .about_image .address p {
+    margin: unset; }
+
 main .About .about_image .contacts p {
-  margin: unset;
-}
+  margin: unset; }
+
+@media screen and (min-width: 1024px) {
+  main .About {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    main .About .about_image {
+      margin-top: 4em; } }
+
 main .Services .service h1 {
   font-size: 1.2em;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 main .Services .service h2 {
   font-size: 1em;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 main .Services .service img {
-  max-width: 100%;
-}/*# sourceMappingURL=styles.css.map */
+  max-width: 100%; }
