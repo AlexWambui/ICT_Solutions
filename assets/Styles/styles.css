@@ -39,6 +39,9 @@ main .Hero {
 main .Home_about .about_text p {
   margin: 12px; }
 
+main .Home_about .about_images {
+  display: none; }
+
 main .Footer {
   background: #000;
   color: #efefef;
@@ -73,6 +76,45 @@ main .Footer {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+  main .Home_about {
+    display: flex;
+    align-items: center;
+    height: 100vh; }
+    main .Home_about .about_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      text-align: left;
+      font-size: 1.2em;
+      z-index: 5; }
+      main .Home_about .about_text p {
+        margin: 5px; }
+    main .Home_about .about_images {
+      display: block;
+      position: relative;
+      width: 40%;
+      height: 100%; }
+      main .Home_about .about_images ul {
+        list-style: none; }
+        main .Home_about .about_images ul li {
+          position: absolute; }
+          main .Home_about .about_images ul li img {
+            width: 300px;
+            z-index: -10; }
+        main .Home_about .about_images ul li:nth-child(1) img {
+          margin: 10px 0 0 -250px;
+          width: 350px; }
+        main .Home_about .about_images ul li:nth-child(2) img {
+          margin: 50px 0 0 60px;
+          width: 200px; }
+        main .Home_about .about_images ul li:nth-child(3) img {
+          margin: 260px 0 0 190px; }
+        main .Home_about .about_images ul li:nth-child(4) img {
+          margin: 425px 0 0 80px;
+          width: 200px; }
+        main .Home_about .about_images ul li:nth-child(5) img {
+          margin: 420px 0 0 -250px; }
   main .Footer {
     position: unset; } }
 
