@@ -163,15 +163,23 @@ main{
             .footer_details{
                 display: block;
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);                
+                grid-template-columns: repeat(3, 1fr);                
                 .footer_wrapper{                    
                     h1, .info{                        
-                        width: 50%;
-                    }                                                        
+                        width: 100%;
+                        padding: 8px;
+                    } 
+                    h1{
+                        font-size: 1.2em;
+                    }                                                       
                     .info{ 
                         margin: auto;
                         p{
                             text-align: left;
+                        }
+                        iframe{
+                            width: 300px;
+                            height: 200px;
                         }
                     }                    
                 }
@@ -188,7 +196,7 @@ main{
             }
         }
         .about_image{
-            img{
+            iframe{
                 max-width: 100%;                
             }
             .address{
@@ -229,9 +237,16 @@ main{
         }
     } 
     @media screen and(min-width: 1024px) {
-        .service{
-            img{
-                width: 400px;
+        .Services{
+            .service{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 1em;
+                .image{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;                    
+                }
             }
         }
     }

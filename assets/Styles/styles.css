@@ -151,10 +151,14 @@ main .Footer .footer_p {
   main .Footer .footer_details {
     display: block;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   main .Footer .footer_details .footer_wrapper h1, main .Footer .footer_details .footer_wrapper .info {
-    width: 50%;
+    width: 100%;
+    padding: 8px;
+  }
+  main .Footer .footer_details .footer_wrapper h1 {
+    font-size: 1.2em;
   }
   main .Footer .footer_details .footer_wrapper .info {
     margin: auto;
@@ -162,11 +166,15 @@ main .Footer .footer_p {
   main .Footer .footer_details .footer_wrapper .info p {
     text-align: left;
   }
+  main .Footer .footer_details .footer_wrapper .info iframe {
+    width: 300px;
+    height: 200px;
+  }
 }
 main .About .about_text h1 {
   padding: 15px 0 0;
 }
-main .About .about_image img {
+main .About .about_image iframe {
   max-width: 100%;
 }
 main .About .about_image .address {
@@ -196,7 +204,14 @@ main .Services .service img {
   max-width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  main .service img {
-    width: 400px;
+  main .Services .service {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+  main .Services .service .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=styles.css.map */
