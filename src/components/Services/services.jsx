@@ -10,7 +10,8 @@ import Maintenance from '../../assets/images/services/maintanance and repairs.jp
 
 function Services(){
     return(
-        <section class="Services container">            
+        <section class="Services container">  
+            <h1 className="content_heading">Services</h1>          
             <div class="service">                        
                 <div class="description">
                     <h1>ICT Support & Cloud Services</h1>                    
