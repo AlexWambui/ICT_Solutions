@@ -1,0 +1,24 @@
+.Services .service h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.Services .service h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+.Services .service img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 790px) {
+  .Services .service {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+  }
+  .Services .service .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=services.css.map */

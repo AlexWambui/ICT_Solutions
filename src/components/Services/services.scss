@@ -1,0 +1,29 @@
+.Services{
+    .service{
+        h1{
+            font-size: 1.2em;
+            font-weight: bold;                
+        }
+        h2{
+            font-size: 1em;
+            font-weight: bold;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+} 
+@media screen and (min-width: 790px) {
+    .Services{
+        .service{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1em;
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;                   
+            }
+        }
+    }
+}
