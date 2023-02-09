@@ -1,0 +1,33 @@
+@media screen and (min-width: 970px){
+    nav{
+        position: sticky;
+        top: 0;
+        height: 8vh;
+        padding: 4px 15px;        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #efefef;
+        background: black;
+        z-index: 10;
+        .logo{
+            text-decoration: none;
+            h1{
+                color: #efefef;
+                font-size: 1.5rem;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;   
+            align-items: center;
+            li{
+                margin: 0 15px;
+                .nav_link{
+                    text-decoration: none;
+                    color: #efefef;
+                }
+            }         
+        }
+    }
+}

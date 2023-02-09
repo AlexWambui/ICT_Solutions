@@ -1,0 +1,30 @@
+footer{
+    background: black;
+    color: #efefef;
+    padding: 5px;
+    .container{
+        margin: 15px 0;
+        h1{
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 1px;
+        }
+        p{
+            margin: unset;
+        }
+    }
+    .footer_reserved{
+        border-top: 1px solid #efefef;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width:970px){
+    footer{
+        .details{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+    }
+}
